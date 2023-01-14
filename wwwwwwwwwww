@@ -63,7 +63,7 @@ LPH_JIT_MAX(
         local On
 
         local Vec2 = function(property)
-            return Vector2.new(property.X, property.Y
+            return Vector2.new(property.X, property.Y + (game:GetService("GuiService"):GetGuiInset().Y))
         end
 
         local UpdateSilentFOV = function()
